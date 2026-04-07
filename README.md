@@ -9,41 +9,25 @@ Comprehensive documentation for Filament v5, designed for LLMs and AI-assisted d
 
 ## Installation
 
-You can install the package via composer:
+This package requires [laravel/boost](https://github.com/laravel/boost). Install as a dev dependency:
 
 ```bash
-composer require aldesrahim/filament-compass
+composer require aldesrahim/filament-compass --dev
 ```
 
-You can publish and run the migrations with:
+Then run the Boost installer — Filament Compass will appear as an available third-party package:
 
 ```bash
-php artisan vendor:publish --tag="filament-compass-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="filament-compass-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="filament-compass-views"
+php artisan boost:install
 ```
 
 ## Usage
 
-After installation, Filament Compass provides comprehensive Filament v5 documentation optimized for LLMs and AI-assisted development. Refer to the published config file to customize its behavior.
+Filament Compass provides Filament v5 guidelines and skills for [laravel/boost](https://github.com/laravel/boost), optimized for LLMs and AI-assisted development. Once installed via `boost:install`, your AI agents will have access to comprehensive Filament v5 documentation.
+
+### Recommended
+
+Pair this package with [filacheck](https://github.com/laraveldaily/filacheck) for the best AI-assisted Filament development experience.
 
 ## Testing
 
