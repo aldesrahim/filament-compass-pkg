@@ -44,7 +44,7 @@ it('has a boost guidelines file', function () use ($boostPath) {
 });
 
 it('has a boost skill definition', function () use ($boostPath) {
-    $skill = $boostPath.'/skills/filament-development/SKILL.md';
+    $skill = $boostPath.'/skills/filament-compass/SKILL.md';
 
     expect(file_exists($skill))->toBeTrue()
         ->and(File::size($skill))->toBeGreaterThan(0);
