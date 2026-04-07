@@ -1,19 +1,11 @@
-# Comprehensive documentation for Filament v5, designed for LLMs and AI-assisted development.
+# Filament Compass
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/aldesrahim/filament-compass.svg?style=flat-square)](https://packagist.org/packages/aldesrahim/filament-compass)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/aldesrahim/filament-compass/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/aldesrahim/filament-compass/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/aldesrahim/filament-compass/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/aldesrahim/filament-compass/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/aldesrahim/filament-compass-pkg/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/aldesrahim/filament-compass-pkg/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/aldesrahim/filament-compass-pkg/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/aldesrahim/filament-compass-pkg/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/aldesrahim/filament-compass.svg?style=flat-square)](https://packagist.org/packages/aldesrahim/filament-compass)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
-
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/filament-compass.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/filament-compass)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+Comprehensive documentation for Filament v5, designed for LLMs and AI-assisted development.
 
 ## Installation
 
@@ -51,10 +43,7 @@ php artisan vendor:publish --tag="filament-compass-views"
 
 ## Usage
 
-```php
-$filamentCompass = new Aldesrahim\FilamentCompass();
-echo $filamentCompass->echoPhrase('Hello, Aldesrahim!');
-```
+After installation, Filament Compass provides comprehensive Filament v5 documentation optimized for LLMs and AI-assisted development. Refer to the published config file to customize its behavior.
 
 ## Testing
 
