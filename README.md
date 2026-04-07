@@ -25,6 +25,16 @@ php artisan boost:install
 
 Filament Compass provides Filament v5 guidelines and skills for [laravel/boost](https://github.com/laravel/boost), optimized for LLMs and AI-assisted development. Once installed via `boost:install`, your AI agents will have access to comprehensive Filament v5 documentation.
 
+### Working with AI Assistants (Claude Code, Cursor, etc.)
+
+When starting a Filament-related task, always instruct your AI assistant to load the `filament-compass` skill before proceeding. This ensures the AI has access to accurate Filament v5 documentation and follows the correct patterns.
+
+**Example prompt:**
+
+```
+Load the filament-compass skill, then help me create a Filament resource for the `Order` model with a table that shows id, customer name, status, and total amount, and a form with all the necessary fields.
+```
+
 ### Recommended
 
 Pair this package with [filacheck](https://github.com/laraveldaily/filacheck) for the best AI-assisted Filament development experience.
