@@ -2,9 +2,9 @@
 
 namespace Aldesrahim\FilamentCompass\Tests;
 
+use Aldesrahim\FilamentCompass\FilamentCompassServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Aldesrahim\FilamentCompass\FilamentCompassServiceProvider;
 
 class TestCase extends Orchestra
 {
