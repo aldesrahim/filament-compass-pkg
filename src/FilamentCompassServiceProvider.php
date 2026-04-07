@@ -2,7 +2,6 @@
 
 namespace Aldesrahim\FilamentCompass;
 
-use Aldesrahim\FilamentCompass\Commands\FilamentCompassCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
