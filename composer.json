@@ -34,8 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Aldesrahim\\FilamentCompass\\": "src/",
-            "Aldesrahim\\FilamentCompass\\Database\\Factories\\": "database/factories/"
+            "Aldesrahim\\FilamentCompass\\": "src/"
         }
     },
     "autoload-dev": {
@@ -63,10 +62,7 @@
         "laravel": {
             "providers": [
                 "Aldesrahim\\FilamentCompass\\FilamentCompassServiceProvider"
-            ],
-            "aliases": {
-                "FilamentCompass": "Aldesrahim\\FilamentCompass\\Facades\\FilamentCompass"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
