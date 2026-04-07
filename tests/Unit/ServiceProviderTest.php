@@ -1,6 +1,7 @@
 <?php
 
 use Aldesrahim\FilamentCompass\FilamentCompassServiceProvider;
+use Spatie\LaravelPackageTools\Package;
 
 it('is registered in the application', function () {
     expect(app()->getProvider(FilamentCompassServiceProvider::class))
@@ -15,7 +16,7 @@ it('registers the package under the filament-compass name', function () {
     $reflection = new ReflectionClass($provider);
     $method = $reflection->getMethod('configurePackage');
 
-    $package = new Spatie\LaravelPackageTools\Package;
+    $package = new Package;
     $method->invoke($provider, $package);
 
     expect($package->name)->toBe('filament-compass');
