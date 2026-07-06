@@ -154,6 +154,27 @@ BulkAction::make('approve')
     ->action(fn (Collection $records) => $records->each->approve())
 ```
 
+## Enum Actions/Abilities
+
+`Resource::can()`, `authorize()`, `getAuthorizationResponse()`, and `Action::authorizeAny()` / `authorizeIndividualRecords()` accept a `UnitEnum` case in addition to a string:
+
+```php
+enum ProductAbility: string
+{
+    case ViewAny = 'view_any_product';
+    case Update = 'update_product';
+}
+
+// Resource-level
+ProductResource::can(ProductAbility::Update, $record);
+
+// Action-level
+Action::make('approve')
+    ->authorizeAny([ProductAbility::Update, ProductAbility::ViewAny])
+```
+
+Policy methods still receive the enum case as-is (e.g. `Gate`/policy resolution uses `$ability->name` for backed/pure enums), so pair this with a policy that switches on the enum rather than a string ability name.
+
 ## Navigation Authorization
 
 Hide resources from navigation:

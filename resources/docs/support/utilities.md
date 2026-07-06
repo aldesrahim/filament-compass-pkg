@@ -137,6 +137,26 @@ TextColumn::make('status')
 | `info` | Information |
 | `gray` | Neutral states |
 
+### Contrast Ratio
+
+```php
+use Filament\Support\Colors\Color;
+
+Color::calculateContrastRatio('#000000', '#ffffff'); // 21.0
+Color::isTextContrastRatioAccessible('#000000', '#ffffff'); // true, WCAG AA (>= 4.5)
+Color::isNonTextContrastRatioAccessible('#000000', '#ffffff'); // true, WCAG AA (>= 3.0)
+```
+
+WCAG conformance level constants:
+
+| Constant | Value | Use |
+|----------|-------|-----|
+| `Color::WCAG_AA_TEXT` | `4.5` | Normal-size text, AA |
+| `Color::WCAG_AA_LARGE_TEXT` | `3.0` | Large-scale text, AA |
+| `Color::WCAG_AA_NON_TEXT` | `3.0` | UI components/graphics, AA |
+| `Color::WCAG_AAA_TEXT` | `7.0` | Normal-size text, AAA |
+| `Color::WCAG_AAA_LARGE_TEXT` | `4.5` | Large-scale text, AAA |
+
 ## RawJs
 
 Execute JavaScript code.

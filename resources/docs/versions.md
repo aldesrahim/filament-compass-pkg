@@ -1,6 +1,6 @@
 # Filament Versions
 
-Last scanned: 2026-04-29
+Last scanned: 2026-07-06
 
 | Package | Version |
 |---------|---------|
@@ -32,7 +32,7 @@ From `source/filament/packages/support/composer.json`:
 | illuminate/contracts | ^11.28|^12.0|^13.0 |
 | kirschbaum-development/eloquent-power-joins | ^4.0 |
 | league/uri-components | ^7.0 |
-| livewire/livewire | ^3.5 |
+| livewire/livewire | ^4.1 |
 | nette/php-generator | ^4.0 |
 | ryangjchandler/blade-capture-directive | ^1.0 |
 | spatie/invade | ^2.0 |

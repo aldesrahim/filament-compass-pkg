@@ -268,6 +268,35 @@ TextColumn::make('name')
 ])
 ```
 
+## Security Mistakes
+
+### Unrestricted File Uploads on Custom Livewire Components
+
+❌ **Wrong**:
+```php
+class CustomWidget extends Widget
+{
+    use InteractsWithSchemas;
+    // No upload restriction — Livewire's _startUpload/_finishUpload RPCs
+    // accept uploads to ANY property path, even if this schema has no FileUpload field
+}
+```
+
+✅ **Correct**:
+```php
+use Filament\Schemas\Concerns\RestrictsFileUploadsToSchemaComponents;
+
+class CustomWidget extends Widget
+{
+    use InteractsWithSchemas;
+    use RestrictsFileUploadsToSchemaComponents;
+    // _startUpload/_finishUpload now 403 unless the target property maps
+    // to a FileUpload (or file-attachment-capable) field in the schema
+}
+```
+
+Any custom Livewire component using `InteractsWithSchemas` (custom pages, widgets, actions) is reachable via Livewire's upload RPCs by default, regardless of whether its schema actually declares a `FileUpload` field. Add `RestrictsFileUploadsToSchemaComponents` whenever the component is reachable by users you don't fully trust.
+
 ## Variable Naming Mistakes
 
 ❌ **Wrong**:
